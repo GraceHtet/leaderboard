@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
   <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/> -->
 
-  <h3><b>ToDo List README</b></h3>
+  <h3><b>LeaderBoard README</b></h3>
 
 </div>
 
@@ -102,7 +102,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://gracehtet.github.io/ToDoList-Webpack-/dist/)
+<!-- - [Live Demo Link]() -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +127,7 @@ Example command:
 
 Clone this repository to your desired folder:
 
-https://github.com/GraceHtet/ToDoList-Webpack-.git
+https://github.com/GraceHtet/leaderboard.git
 
 and you are ready to use it. You don't need to install anything or setup anything.
 Good luck!
@@ -143,20 +143,16 @@ Good luck!
 - GitHub: [@githubhandle](https://github.com/GraceHtet)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/thiri-htet-418047204/)
 
-👤 **Marko Kermichiev**
-
-- GitHub: [@githubhandle](https://github.com/MarkoKermi)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+<!-- ## 🔭 Future Features <a name="future-features"></a> -->
 
 <!-- > Describe 1 - 3 features you will add to the project. -->
 
-- [ ] **[Add drag and drop function]**
-- [ ] **[Update UI/UX Design]**
+<!-- - [ ] **[Add drag and drop function]**
+- [ ] **[Update UI/UX Design]** -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
