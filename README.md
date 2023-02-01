@@ -94,9 +94,8 @@ After you're finished please remove all the comments and instructions!
 
 <!-- > Describe between 1-3 key features of the application. -->
 
-- **[JS OBJECTS]**
-- **[BASIC HTML]**
-- **[WEBPACK]**
+- **[Add Score]**
+- **[Display Score]**
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
