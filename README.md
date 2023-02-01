@@ -54,19 +54,20 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [TodoList] <a name="ToDoList-project"></a>
+# 📖 [Leaderboard] <a name="Leaderboard-project"></a>
 
 > This is the project using webpack.
 
-**[TodoList]** is a webpage where you can add and delete one more todo lists.
+**[Leaderboard]** website displays scores submitted by different players. And you can also submit your score.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-<!-- ### Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> HTML| CSS| JS
+> Webpack
 
-<details>
+<!--<details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
