@@ -1,25 +1,11 @@
 import './style.css';
+import idGenerator from './module/idGenerator.js';
 import Fun from './module/fun.js';
+import { formAction, refreshAction } from './module/domAction.js';
 
+idGenerator();
 const scoreFuns = new Fun();
 
-const form = document.querySelector('form');
-
-const formAction = () => {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.querySelector('#name');
-    const score = document.querySelector('#score');
-
-    if (name.value !== '' && score.value !== '') {
-      scoreFuns.add(name.value, score.value);
-      name.value = '';
-      score.value = '';
-    }
-
-    scoreFuns.show();
-  });
-};
-
 formAction();
+refreshAction();
 scoreFuns.show();
