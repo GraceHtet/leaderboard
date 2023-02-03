@@ -1,7 +1,7 @@
 class Fun {
   constructor() {
     this.scores = JSON.parse(localStorage.getItem('scores')) || [];
-    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ThiORKokoEkrMIO/scores';
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iRt0XJ5I1q1NWqAQJmZf/scores';
   }
 
   apiRecall = async () => {
@@ -18,14 +18,18 @@ class Fun {
 
   show = async () => {
     this.scores = await this.apiRecall();
+
+    const srtArrs = [];
+    Fun.sortedArr(this.scores, srtArrs);
+
     const dataShow = document.querySelector('tbody');
     dataShow.innerHTML = '';
-    this.scores.forEach((scr) => {
+    srtArrs.forEach((srtarr) => {
       dataShow.innerHTML += `<tr class="show">
             <td>
               <span class="name">${Fun.capitalize(
-        scr.name,
-      )}</span>:<span class="score">${scr.score}</span>
+        srtarr.name,
+      )}</span>:<span class="score">${srtarr.score}</span>
             </td>
           </tr>
           `;
@@ -34,6 +38,16 @@ class Fun {
 
   static capitalize(name) {
     return name.charAt(0).toUpperCase() + name.slice(1);
+  }
+
+  static sortedArr(scores, srtArr) {
+    const userScrs = scores.map((user) => user.score).sort((a, b) => b - a);
+
+    userScrs.forEach((userscr) => {
+      scores.forEach((scr) => {
+        if (scr.score === userscr) srtArr.push(scr);
+      });
+    });
   }
 
   add = async (name, score) => {

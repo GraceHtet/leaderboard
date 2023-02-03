@@ -60,6 +60,8 @@ After you're finished please remove all the comments and instructions!
 
 **[Leaderboard]** website displays scores submitted by different players. And you can also submit your score.
 
+<img src="./src/assets/img/leaderBoard.png" alt="leaderboard"/>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -140,8 +142,8 @@ Good luck!
 
 👤 **Grace Htet**
 
-- GitHub: [@githubhandle](https://github.com/GraceHtet)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/thiri-htet-418047204/)
+- GitHub: [Grace Htet](https://github.com/GraceHtet)
+- LinkedIn: [Thiri Htet](https://www.linkedin.com/in/thiri-htet-418047204/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
