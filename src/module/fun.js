@@ -21,7 +21,7 @@ class Fun {
 
     const srtArrs = [];
     Fun.sortedArr(this.scores, srtArrs);
-    
+ 
     const dataShow = document.querySelector('tbody');
     dataShow.innerHTML = '';
     srtArrs.forEach((srtarr) => {
