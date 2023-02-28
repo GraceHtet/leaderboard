@@ -9,39 +9,36 @@
   <body>
     <h1>Leaderboard</h1>
     <section>
-      <div class="recent-score">
-        <div class="recent-title">
-          <h2>Recent Score</h2>
-          <a href="#" class="refresh"
-            ><img src="./assets/refresh.svg" alt="refresh"
-          /></a>
-        </div>
-        <table>
-          <tbody></tbody>
-        </table>
-      </div>
-      <div class="add-score">
-        <h2>Add Your Scores</h2>
-        <form action="" method="">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control"
-            placeholder="Your name"
-          />
-          <input
-            type="number"
-            name="score"
-            id="score"
-            class="form-control"
-            placeholder="Your score"
-          />
-          <div class="btn">
-            <button type="submit" class="submit-btn">Submit</button>
+      <div class="score-container">
+        <div class="recent-score">
+          <div class="recent-title">
+            <h2>Recent Score</h2>
+            <a href="#" class="refresh"><img src="./assets/refresh.svg" alt="refresh" /></a>
           </div>
-        </form>
-        <p class="msg"></p>
+          <table>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="add-score">
+          <h2>Add Your Scores</h2>
+          <form action="" method="">
+            <div class="name-cont">
+              <input type="text" name="name" id="name" class="form-control" placeholder=" " />
+              <label for="name">Your name</label>
+            </div>
+            <div class="score-cont">
+              <input type="number" name="score" id="score" class="form-control" placeholder=" " />
+              <label for="score">Your Score</label>
+            </div>
+            <div class="btn">
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </form>
+          <p class="msg"></p>
+        </div>
+      </div>
+      <div class="ani-cont">
+        <p class="winner"></p>
       </div>
     </section>
   </body>
