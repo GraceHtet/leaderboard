@@ -14,12 +14,23 @@ const formAction = () => {
       scoreFuns.add(name.value, score.value);
       name.value = '';
       score.value = '';
-    }
-    scoreFuns.show();
-    msg.style.display = 'block';
-    msg.innerText = `
+      msg.className = 'msg';
+      msg.style.display = 'block';
+      msg.innerText = `
     You have successfully added your score.👏
     Click the refresh icon to see your result. 😉`;
+    } else if (name.value === '') {
+      msg.classList.add('empt');
+      msg.style.display = 'block';
+      msg.innerText = `
+   Please , Add your NAME`;
+    } else if (score.value === '') {
+      msg.classList.add('empt');
+      msg.style.display = 'block';
+      msg.innerText = `
+   Please , Add your SCORE`;
+    }
+    scoreFuns.show();
   });
 };
 

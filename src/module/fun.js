@@ -23,17 +23,19 @@ class Fun {
     Fun.sortedArr(this.scores, srtArrs);
 
     const dataShow = document.querySelector('tbody');
+    const winner = document.querySelector('.winner');
     dataShow.innerHTML = '';
-    srtArrs.forEach((srtarr) => {
+    srtArrs.forEach((srtarr, idx) => {
       dataShow.innerHTML += `<tr class="show">
             <td>
-              <span class="name">${Fun.capitalize(
+              <span>${idx + 1}. <span><span class="name">${Fun.capitalize(
         srtarr.name,
-      )}</span>:<span class="score">${srtarr.score}</span>
+      )}</span> : <span class="score">${srtarr.score}</span>
             </td>
           </tr>
           `;
     });
+    winner.innerHTML = `WINNER 🥳 ${srtArrs[0].name} 🥳`;
   };
 
   static capitalize(name) {

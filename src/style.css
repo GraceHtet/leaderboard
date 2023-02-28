@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
 }
 
 body {
   width: 100%;
   height: 100vh;
-  background-image: url("./assets/img/bg.png");
+  background-image: url('./assets/img/bg.png');
   background-repeat: no-repeat;
   background-position: top;
   margin: 0;
@@ -26,9 +26,13 @@ h1 {
 
 section {
   width: 80%;
+  padding: 5% 10%;
+}
+
+.score-container {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 5% 10%;
 }
 
 .recent-score,
@@ -89,30 +93,24 @@ tbody {
 .show {
   width: 100%;
   color: #fff;
-  height: 30px;
+  height: auto;
   line-height: 30px;
   display: inline-block;
   padding-left: 3%;
 }
 
 .show:first-of-type {
-  height: 50px;
-  line-height: 50px;
   border: 1px solid #f3ab3e;
   border-radius: 5px 5px 0 0;
   position: relative;
 }
 
 .show:nth-of-type(2) {
-  height: 40px;
-  line-height: 40px;
   border: 1px solid silver;
   position: relative;
 }
 
 .show:nth-of-type(3) {
-  height: 35px;
-  line-height: 35px;
   border: 1px solid #cd7f32;
   position: relative;
 }
@@ -120,7 +118,7 @@ tbody {
 .show:first-of-type::after,
 .show:nth-of-type(2)::after,
 .show:nth-of-type(3)::after {
-  content: "";
+  content: '';
   width: 10%;
   height: 50%;
   background: transparent;
@@ -132,14 +130,14 @@ tbody {
 }
 
 .show:first-of-type::after {
-  background-image: url("./assets/img/gold-cup.png");
+  background-image: url('./assets/img/gold-cup.png');
   top: 12.5px;
 }
 
 .show:nth-of-type(2)::after {
   width: 8%;
   height: 80%;
-  background-image: url("./assets/img/silver-cup.png");
+  background-image: url('./assets/img/silver-cup.png');
   right: 13px;
   top: 10px;
 }
@@ -147,7 +145,7 @@ tbody {
 .show:nth-of-type(3)::after {
   width: 7%;
   height: 70%;
-  background-image: url("./assets/img/bronze.png");
+  background-image: url('./assets/img/bronze.png');
   right: 15px;
   top: 7.5px;
 }
@@ -167,7 +165,22 @@ form {
   row-gap: 20px;
 }
 
+.name-cont,
+.score-cont {
+  position: relative;
+  margin-top: 1em;
+}
+
+label {
+  color: gray;
+  position: absolute;
+  left: 2%;
+  top: 15%;
+  cursor: text;
+}
+
 input {
+  width: 100%;
   background: transparent;
   color: #fff;
   border: none;
@@ -186,9 +199,17 @@ input:focus {
   outline: none;
 }
 
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  color: #f3ab3e;
+  font-size: 13px;
+  top: -50%;
+  left: 0;
+}
+
 /* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
+input[type='number'] {
+  --moz-appearance: textfield;
 }
 
 .btn {
@@ -217,9 +238,39 @@ input[type="number"] {
   display: none;
 }
 
+.msg.empt {
+  color: red;
+}
+
+.ani-cont {
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.winner {
+  color: #f3ab3e;
+  font-size: 1em;
+  font-style: italic;
+  transform: translate(100%);
+  animation-name: text-ani;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text-ani {
+  from {
+    transform: translate(-10%);
+  }
+
+  to {
+    transform: translate(100%);
+  }
+}
+
 @media (max-width: 1000px) {
   body {
-    background: url("./assets/img/laptopsmBg.png");
+    background: url('./assets/img/laptopsmBg.png');
     background-position: center;
   }
 
@@ -231,7 +282,7 @@ input[type="number"] {
 
 @media (max-width: 1000px) {
   body {
-    background: url("./assets/img/laptopsmBg.png");
+    background: url('./assets/img/laptopsmBg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,7 +301,7 @@ input[type="number"] {
 
 @media (max-width: 768px) {
   body {
-    background: url("./assets/img/bigPhBg.png");
+    background: url('./assets/img/bigPhBg.png');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -285,7 +336,7 @@ input[type="number"] {
 
 @media (max-width: 500px) {
   body {
-    background: url("./assets/img/phBg.png");
+    background: url('./assets/img/phBg.png');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
